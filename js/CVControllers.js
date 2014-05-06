@@ -398,19 +398,27 @@ cvControllers.controller('ArtController', ['$scope',
 
         var threedee = [
             {
-                src : 'images/portfolio/unitlab/Final 1.png',
+                src : 'images/portfolio/unitlab/Final 1.jpg',
+                png : 'images/portfolio/unitlab/Final 1.png',
+                poster : 'images/portfolio/unitlab/poster/Final 1.jpg',
                 title : 'UNIT Lab 1'
             },
             {
-                src : 'images/portfolio/unitlab/Final 2.png',
+                src : 'images/portfolio/unitlab/Final 2.jpg',
+                png : 'images/portfolio/unitlab/Final 2.png',
+                poster : 'images/portfolio/unitlab/poster/Final 2.jpg',
                 title : 'UNIT Lab 2'
             },
             {
-                src : 'images/portfolio/unitlab/Final 3.png',
+                src : 'images/portfolio/unitlab/Final 3.jpg',
+                png : 'images/portfolio/unitlab/Final 3.png',
+                poster : 'images/portfolio/unitlab/poster/Final 3.jpg',
                 title : 'UNIT Lab 3'
             },
             {
-                src : 'images/portfolio/unitlab/Final 4.png',
+                src : 'images/portfolio/unitlab/Final 4.jpg',
+                png : 'images/portfolio/unitlab/Final 4.png',
+                poster : 'images/portfolio/unitlab/poster/Final 4.jpg',
                 title : "UNIT Lab 4"
             },
             {
