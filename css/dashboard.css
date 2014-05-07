@@ -58,7 +58,7 @@ body {
 }
 
 @media (min-width: 768px) {
-    .shortnav {
+    li.shortnav {
         display: none;
     }
 }
