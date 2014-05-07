@@ -7,6 +7,47 @@ function makeDate (o) {
     return new Date (o[0], o[1]-1, o[2]);
 }
 
+var cvNavigation = [
+    {
+        title : "Profile",
+        url : "/profile",
+        href : "#profile"
+    },
+    {
+        title : "Employment",
+        url : "/employment",
+        href : "#employment"
+    } //,
+//    {
+//        title : "Technology",
+//        url : "/technology",
+//        href : "#technology"
+//    }
+];
+
+var portfolioNav = [
+    {
+        title : "Audio",
+        url : "/audio",
+        href : "#audio"
+    },
+    {
+        title : "Video",
+        url : "/video",
+        href : "#video"
+    },
+    {
+        title : "Art",
+        url : "/art",
+        href : "#art"
+    },
+    {
+        title : "Games",
+        url : "/games",
+        href : "#games"
+    }
+];
+
 cvControllers.controller('NavController', ['$scope', '$location',
     function ($scope, $location) {
 
@@ -17,48 +58,11 @@ cvControllers.controller('NavController', ['$scope', '$location',
         $scope.Navigation = [
             {
                 head : "CV",
-                items : [
-                    {
-                        title : "Profile",
-                        url : "/profile",
-                        href : "#profile"
-                    },
-                    {
-                        title : "Employment",
-                        url : "/employment",
-                        href : "#employment"
-                    },
-                    {
-                        title : "Technology",
-                        url : "/technology",
-                        href : "#technology"
-                    }
-                ]
+                items : cvNavigation
             },
             {
                 head : "Portfolio",
-                items : [
-                    {
-                        title : "Audio",
-                        url : "/audio",
-                        href : "#audio"
-                    },
-                    {
-                        title : "Video",
-                        url : "/video",
-                        href : "#video"
-                    },
-                    {
-                        title : "Art",
-                        url : "/art",
-                        href : "#art"
-                    },
-                    {
-                        title : "Games",
-                        url : "/games",
-                        href : "#games"
-                    }
-                ]
+                items : portfolioNav
             }
         ];
 
@@ -83,6 +87,7 @@ cvControllers.controller('ProfileController', ['$scope',
         $scope.Email = "jeff@rathmoreit.com";
         $scope.PhoneNumber = "+353 87 916 2652";
 
+        $scope.ShortMenu = _.union(cvNavigation, portfolioNav);
 
     }
 ]);
