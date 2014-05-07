@@ -172,13 +172,13 @@ body {
 
 
 @media all and (orientation: landscape) {
-    .portrait {
+    .img-portrait {
         display : none;
     }
 }
 
 @media all and (orientation: portrait) {
-    .landscape {
+    .img-landscape {
         display: none;
     }
 }

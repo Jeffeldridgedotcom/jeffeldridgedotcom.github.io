@@ -121,3 +121,4 @@ cvApp.directive ("magnificVideos", function () {
 
     }
 });
+
