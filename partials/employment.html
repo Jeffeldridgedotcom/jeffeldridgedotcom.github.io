@@ -28,16 +28,16 @@
                 <p ng-repeat="desc in job.desc track by $index" class="jobdesc">{{desc}}</p>
 
                 <div class="col-xs-6 col-sm-4 placeholder">
-                    <h4>Skills</h4>
-                    <ul class="list-inline">
+                    <h5>Skills</h5>
+                    <ul class="list-inline list-unstyled text-info">
                         <li ng-repeat="skill in job.skills">{{skill}}</li>
                     </ul>
                 </div>
 
                 <div class="col-xs-6 col-sm-4 placeholder">
                     <div ng-show="job.business.length > 0">
-                        <h4>Business</h4>
-                        <ul class="list-inline">
+                        <h5>Business</h5>
+                        <ul class="list-inline list-unstyled text-info">
                             <li ng-repeat="business in job.business track by $index">{{business}}</li>
                         </ul>
                     </div>
