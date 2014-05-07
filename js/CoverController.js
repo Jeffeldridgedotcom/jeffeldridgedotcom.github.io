@@ -58,6 +58,8 @@ coverApp.directive ("landscapeOnly", function () {
             if ($(window).height() < $(window).width()) {
                 $('#portraitimg').hide();
                 $(element).show();
+
+                scope.IsLandscape = true;
             }
 
         }
@@ -73,6 +75,9 @@ coverApp.directive ("portraitOnly", function () {
             if ($(window).height() > $(window).width()) {
                 $('#landscapeimg').hide();
                 $(element).show();
+
+                scope.IsLandscape = false;
+
             }
 
 
