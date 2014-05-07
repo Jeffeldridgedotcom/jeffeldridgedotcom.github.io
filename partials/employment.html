@@ -8,6 +8,7 @@
         <div ng-repeat="job in History" class="col-xs-12 col-sm-12 placeholder section">
 
             <h2>{{job.where}}
+                <br class="mobile-only" />
                 <small>
                     {{job.start | date :'MMM yyyy'}} -
                     <span ng-show="job.end===''">present</span>
@@ -28,7 +29,7 @@
 
                 <div class="col-xs-6 col-sm-4 placeholder">
                     <h4>Skills</h4>
-                    <ul>
+                    <ul class="list-inline">
                         <li ng-repeat="skill in job.skills">{{skill}}</li>
                     </ul>
                 </div>
@@ -36,7 +37,7 @@
                 <div class="col-xs-6 col-sm-4 placeholder">
                     <div ng-show="job.business.length > 0">
                         <h4>Business</h4>
-                        <ul>
+                        <ul class="list-inline">
                             <li ng-repeat="business in job.business track by $index">{{business}}</li>
                         </ul>
                     </div>
