@@ -2,11 +2,11 @@ function CoverController ($scope, $timeout) {
 
     var
         backgrounds = [
-            "Close Up.png",
-            "Final 1.png",
-            "Final 3.png",
-            "Group Blurred.png",
-            "PopArt1.png"
+            "Close Up.jpg",
+            "Final 1.jpg",
+            "Final 3.jpg",
+            "Group Blurred.jpg",
+            "PopArt1.jpg"
         ],
 
         nb = 0,

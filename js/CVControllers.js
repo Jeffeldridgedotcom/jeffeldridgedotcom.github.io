@@ -422,27 +422,33 @@ cvControllers.controller('ArtController', ['$scope',
                 title : "UNIT Lab 4"
             },
             {
-                src : 'images/portfolio/cyberminion/Close Up BW.png',
+                src : 'images/portfolio/cyberminion/Close Up BW.jpg',
+                poster : 'images/portfolio/cyberminion/poster/Close Up BW.jpg',
                 title : "1960's B&W Close-Up"
             },
             {
-                src : 'images/portfolio/cyberminion/Close Up.png',
+                src : 'images/portfolio/cyberminion/Close Up.jpg',
+                poster : 'images/portfolio/cyberminion/poster/Close Up.jpg',
                 title : "Up close and personal"
             },
 //            {
-//                src : 'images/portfolio/cyberminion/Group 1.png',
+//                src : 'images/portfolio/cyberminion/Group 1.jpg',
+//                poster : 'images/portfolio/cyberminion/poster/Group 1.jpg',
 //                title : "Leader and troopers"
 //            },
             {
-                src : 'images/portfolio/cyberminion/Group Blurred.png',
+                src : 'images/portfolio/cyberminion/Group Blurred.jpg',
+                poster : 'images/portfolio/cyberminion/poster/Group Blurred.jpg',
                 title : "Leader and troopers"
             },
             {
-                src : 'images/portfolio/cyberminion/Leader.png',
+                src : 'images/portfolio/cyberminion/Leader.jpg',
+                poster : 'images/portfolio/cyberminion/poster/Leader.jpg',
                 title : "Cyber-minion Leader"
             },
             {
-                src : 'images/portfolio/cyberminion/Trooper.png',
+                src : 'images/portfolio/cyberminion/Trooper.jpg',
+                poster : 'images/portfolio/cyberminion/poster/Trooper.jpg',
                 title : "Cyber-minion Trooper"
             }
         ];
