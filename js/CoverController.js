@@ -1,11 +1,16 @@
 function CoverController ($scope, $timeout) {
 
     var
-        backgrounds = [
+        landscapes = [
             "Close Up.jpg",
             "Final 1.jpg",
             "Final 3.jpg",
             "Group Blurred.jpg",
+            // "PopArt1.jpg"
+        ],
+
+        portraits = [
+            "Portrait-1.jpg",
             "PopArt1.jpg"
         ],
 
@@ -13,7 +18,8 @@ function CoverController ($scope, $timeout) {
         delay = 10000,
         cycleBackground = function () {
             nb++;
-            $scope.Background = backgrounds[nb % backgrounds.length];
+            $scope.Landscape = landscapes[nb % landscapes.length];
+            $scope.Portrait = portraits[nb % portraits.length];
             $timeout (cycleBackground, delay);
         }
 
@@ -21,11 +27,12 @@ function CoverController ($scope, $timeout) {
         return nb % 2 === 0;
     }
 
-    backgrounds = _.shuffle(backgrounds);
-    backgrounds = _.shuffle(backgrounds);
-    backgrounds = _.shuffle(backgrounds);
+    landscapes = _.shuffle(landscapes);
+    landscapes = _.shuffle(landscapes);
+    landscapes = _.shuffle(landscapes);
 
-    $scope.Background = backgrounds[0];
+    $scope.Landscape = landscapes[0];
+    $scope.Portrait = portraits[0];
 
     $timeout (cycleBackground, delay);
 

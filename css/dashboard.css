@@ -169,3 +169,16 @@ body {
 .mfp-with-zoom.mfp-removing.mfp-bg {
     opacity: 0;
 }
+
+
+@media all and (orientation: landscape) {
+    .portrait {
+        display : none;
+    }
+}
+
+@media all and (orientation: portrait) {
+    .landscape {
+        display: none;
+    }
+}
