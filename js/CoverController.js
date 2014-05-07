@@ -50,37 +50,11 @@ coverControllers.controller('CoverController', ['$scope', '$timeout',
     }
 ]);
 
-coverApp.directive ("landscapeOnly", function () {
+coverApp.directive ("detectOrientation", function () {
     return {
         restrict : 'A',
         link : function (scope, element, attributes) {
-
-            if ($(window).height() < $(window).width()) {
-                $('#portraitimg').hide();
-                $(element).show();
-
-                scope.IsLandscape = true;
-            }
-
-        }
-
-    }
-});
-
-coverApp.directive ("portraitOnly", function () {
-    return {
-        restrict : 'A',
-        link : function (scope, element, attributes) {
-
-            if ($(window).height() > $(window).width()) {
-                $('#landscapeimg').hide();
-                $(element).show();
-
-                scope.IsLandscape = false;
-
-            }
-
-
+            scope.IsLandscape = $(window).height() < $(window).width();
         }
 
     }

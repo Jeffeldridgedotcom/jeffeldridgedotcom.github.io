@@ -28,12 +28,10 @@
 
 <body>
 
-    <div ng-cloak ng-controller="CoverController">
+    <div ng-cloak ng-controller="CoverController" detect-orientation>
 
-        <img id="landscapeimg" ng-src="images/covers/blurred/{{Landscape}}" style="position: fixed" class="img-responsive" landscape-only>
-        <img id="portraitimg" ng-src="images/covers/portrait/{{Portrait}}" style="position: fixed" class="img-responsive" portrait-only>
-        <h1 ng-show="IsLandscape === true">QWERTY</h1>
-        <h1 ng-show="IsLandscape === false">ZXCVB</h1>
+        <img ng-show="IsLandscape===true" ng-src="images/covers/blurred/{{Landscape}}" style="position: fixed" class="img-responsive">
+        <img ng-show="IsLandscape===false" ng-src="images/covers/portrait/{{Portrait}}" style="position: fixed" class="img-responsive">
 
         <div class="site-wrapper" style="position: fixed; z-index: 10;">
 
