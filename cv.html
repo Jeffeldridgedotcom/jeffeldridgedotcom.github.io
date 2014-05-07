@@ -73,7 +73,7 @@
 <div class="container-fluid" ng-controller="NavController">
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
-            <div ng-repeat="section in Navigation">
+            <div ng-cloak ng-repeat="section in Navigation" class="navbar-collapse collapse">
                 <h4>{{section.head}}</h4>
                 <ul class="nav nav-sidebar">
                     <li ng-repeat="item in section.items" ng-class="{active : IsActive('{{item.url}}')}"><a href="{{item.href}}">&nbsp;&nbsp;&nbsp;&nbsp;{{item.title}}</a></li>
