@@ -533,3 +533,9 @@ cvControllers.controller('ArtController', ['$scope',
 
     }
 ]);
+
+cvControllers.controller('GamesController', ['$scope',
+    function ($scope) {
+
+    }
+]);

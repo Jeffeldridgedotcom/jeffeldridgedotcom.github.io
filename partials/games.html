@@ -1,5 +1,38 @@
+<style>
+    .mfp-fade.mfp-bg {
+        opacity: 0.001; /* Chrome opacity transition bug */
+        -webkit-transition: all 0.15s ease-out;
+        -moz-transition: all 0.15s ease-out;
+        transition: all 0.15s ease-out;
+    }
+    .mfp-fade.mfp-bg.mfp-ready {
+        opacity: 0.8;
+    }
+    .mfp-fade.mfp-bg.mfp-removing {
+        opacity: 0;
+    }
+
+    .mfp-fade.mfp-wrap .mfp-content {
+        opacity: 0;
+        -webkit-transition: all 0.15s ease-out;
+        -moz-transition: all 0.15s ease-out;
+        transition: all 0.15s ease-out;
+    }
+    .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+        opacity: 1;
+    }
+    .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+        opacity: 0;
+    }
+</style>
+
 <div class="section">
     <h2>Zui</h2>
     <p>Zui was developed by myself and four other team members on the Video Game Design Course. I was responsible for the game's sound design and audio programming. This was done in Unity using C#.</p>
-    <iframe width="560" height="315" src="//www.youtube.com/embed/WHm8tUJcfv0?rel=0" frameborder="0" allowfullscreen></iframe>
+    <div magnific-videos>
+        <a href="http://www.youtube.com/watch?v=WHm8tUJcfv0">
+            <span class="glyphicon glyphicon-play"></span>
+        </a>
+    </div>
+    <!--<iframe width="560" height="315" src="//www.youtube.com/embed/WHm8tUJcfv0?rel=0" frameborder="0" allowfullscreen></iframe>-->
 </div>
