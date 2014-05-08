@@ -156,7 +156,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                             "Designed and implemented automated system for issuing Product Keys to vendors for Office 2007/2010 betas",
                             "Produced process and templates for near zero effort Office Add-in localization",
                             "Authored and presented training sessions to European Product Development Centre (on behalf of Microsoft Training group) on internal Source Code Control System (Source Depot)",
-                            "Developer on file transfer system (Rainbow) critical to delivery of all of Microsoft’s major Product Groups including Windows, Office and Visual Studio",
+                            "Developer on file transfer system (Rainbow) critical to delivery many of Microsoft’s major products; including Windows, Office and Visual Studio",
                             "Supported and migrated existing InstallShield deployment solutions"
                         ]
 
@@ -311,8 +311,8 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 where : "IBM UK Laboratories Limited",
                 positions : [
                     {
-                        title: "Systems Programmer",
-                        type: "c"
+                        title: "Trainee Programmer",
+                        type: "p"
                     }
                 ],
                 start : [1989, 9, 1],
