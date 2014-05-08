@@ -15,8 +15,9 @@ coverControllers.controller('CoverController', ['$scope', '$timeout',
             ],
 
             portraits = [
+                "Fed1.jpg",
                 "Portrait-1-Blurred.jpg",
-                "PopArt1.jpg"
+                "PopArtOffsetPortrait.jpg"
             ],
 
             nb = 0,
