@@ -527,9 +527,9 @@ cvControllers.controller('ArtController', ['$scope',
             }
         ];
 
-        threedee = _.shuffle(threedee);
-        threedee = _.shuffle(threedee);
-        $scope.ThreeDeeArtwork = _.shuffle(threedee);
+//        threedee = _.shuffle(threedee);
+//        threedee = _.shuffle(threedee);
+        $scope.ThreeDeeArtwork = threedee; //_.shuffle(threedee);
 
     }
 ]);

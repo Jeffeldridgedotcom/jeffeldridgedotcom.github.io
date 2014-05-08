@@ -45,36 +45,32 @@ cvApp.directive ("magnificImages", function () {
         restrict : 'A',
         link : function (scope, element, attributes) {
 
-//            angular.forEach($('.gallery-container'), function(v) {
-//                v.magnificPopup (
-                var ele = '#' + attributes.id;
-                $(ele).magnificPopup (
-                    {
-                        delegate: 'a',
-                        type: 'image',
-                        closeOnContentClick: false,
-                        closeBtnInside: false,
-                        mainClass: 'mfp-with-zoom mfp-img-mobile',
-                        image: {
-                            verticalFit: true,
-                            titleSrc: function(item) {
-                                return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
-                            }
-                        },
-                        gallery: {
-                            enabled: true
-                        },
-                        zoom: {
-                            enabled: true,
-                            duration: 300, // don't forget to change the duration also in CSS
-                            opener: function(element) {
-                                return element.find('img');
-                            }
+            $(element).magnificPopup(
+                {
+                    delegate: 'a',
+                    type: 'image',
+                    closeOnContentClick: true,
+                    closeBtnInside: false,
+                    mainClass: 'mfp-with-zoom mfp-img-mobile',
+                    image: {
+                        verticalFit: true,
+                        titleSrc: function (item) {
+                            return item.el.attr('title') + ' &middot; <a class="image-source-link" href="' + item.el.attr('data-source') + '" target="_blank">image source</a>';
                         }
+                    },
+                    gallery: {
+                        enabled: true
+                    },
+                    zoom: {
+                        enabled: true,
+                        duration: 300, // don't forget to change the duration also in CSS
+                        opener: function (element) {
+                            return element.find('img');
+                        }
+                    }
 
-                    });
+                });
 
-  //          });
 
         }
 
@@ -85,8 +81,6 @@ cvApp.directive ("magnificVideos", function () {
     return {
         restrict: 'A',
         link: function (scope, element, attributes) {
-
-            var ele = '#' + attributes.id;
             $(element).magnificPopup({
                 delegate : 'a',
                 disableOn: 700,
