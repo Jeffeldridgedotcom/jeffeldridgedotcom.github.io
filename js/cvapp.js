@@ -1,4 +1,4 @@
-var cvApp = angular.module("CVApp", ['ngAnimate', 'ngRoute', 'cvControllers']);
+var cvApp = angular.module("CVApp", ['ngAnimate', 'ngRoute', 'ngSanitize', 'cvControllers']);
 
 cvApp.config(['$routeProvider',
     function($routeProvider) {

@@ -123,108 +123,184 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
         $scope.History = [
             {
                 where : "Rathmore IT Solutions",
-                type : "p",
-                position : "Consultant",
+                positions : [
+                    {
+                        title: "Consultant",
+                        type: "p",
+                        desc : [""],
+                        start : [2010, 11, 1],
+                        end : ""
+                    }
+                ],
                 start : [2010, 11, 1],
                 end : "",
-                desc : ["Lorem ipsum..."],
                 business : ["Education"],
                 skills : ["Javascript", "Node.js", "Angular.js", "C#", "ASP.NET"]
             },
             {
                 where : "Microsoft European Product Development Centre",
-                type : "p",
-                position : "Software Design Engineer",
+                positions : [
+                    {
+                        title : "Software Design Engineer in the Office Product Group",
+                        type : "p",
+                        start : [2003, 12, 1],
+                        end : [2010, 10, 22],
+                        desc : [
+                            "Inventor of <a href='http://patent.ipexl.com/EP/1669920-a1.html' target='_blank'>EPO Patent 1669920-A1 Information management systems with time zone information, including event scheduling processes</a>",
+                            "Developed Excel VSTO add-in to bring lightweight localization toolset to the Office platform",
+                            "Directed Engineering Excellence initiatives for Software Configuration Management",
+                            "Implemented <a href='http://wixtoolset.org/' target='_blank'>Windows Installer XML</a> (WIX) templates for near zero effort deployment solutions",
+                            "Created the <a href='http://www.microsoft.com/en-ie/download/details.aspx?id=5887' target='_blank'>Microsoft Outlook SMS Add-in</a> (text messaging) for free download on Office Online",
+                            "Created the <a href='http://www.microsoft.com/en-ie/download/details.aspx?id=22169' target='_blank'>International Character Toolbar</a> for free download on Office Online",
+                            "Developed C++ template library for rapid Office Add-in development",
+                            "Designed and implemented automated system for issuing Product Keys to vendors for Office 2007/2010 betas",
+                            "Produced process and templates for near zero effort Office Add-in localization",
+                            "Authored and presented training sessions to European Product Development Centre (on behalf of Microsoft Training group) on internal Source Code Control System (Source Depot)",
+                            "Developer on file transfer system (Rainbow) critical to delivery of all of Microsoft’s major Product Groups including Windows, Office and Visual Studio",
+                            "Supported and migrated existing InstallShield deployment solutions"
+                        ]
+
+                    },
+                    {
+                        title: "Development Lead in Windows Engineering Group (Productivity Tools Team)",
+                        type: "p",
+                        start : [1999, 10, 1],
+                        end : [2003, 11, 1],
+                        desc : [
+                            "Developed ASP.NET terminology management system",
+                            "Co-developed secure file transfer server and client application",
+                            "Lead development on vendor and contract management application",
+                            "Lead development on ASP.NET front end for corp wide issue tracking system"
+                        ]
+                    }
+
+
+                ],
                 start : [1999, 9, 1],
                 end : [2010, 10, 22],
-                desc : ["Lorem ipsum..."],
                 business : ["Software Localization"],
                 skills : ["C++", "C#", "SQL", "ASP.NET", "Javascript", "Perl"]
             },
             {
                 where : "Natwest Magex UK",
-                type : "c",
-                position : "Lead Programmer",
+                positions : [
+                    {
+                        title: "Lead Programmer",
+                        type: "c"
+                    }
+                ],
                 start : [1999, 3, 1],
                 end : [1999, 9, 1],
-                desc : ["Lorem ipsum..."],
+                desc : [""],
                 business : ["e-Commerce micro-transactions"],
                 skills : ["C++", "MFC"]
             },
             {
                 where : "Deutsche Bank",
-                type : "c",
-                position : "Programmer",
+                positions : [
+                    {
+                        title: "Programmer",
+                        type: "c"
+                    }
+                ],
                 start : [1998, 10, 1],
                 end : [1999, 2, 28],
-                desc : ["Lorem ipsum..."],
+                desc : [""],
                 business : ["Repurchase Agreements (Repos)"],
                 skills : ["C++", "MFC"]
             },
             {
                 where : "Lehman Brothers",
-                type : "c",
-                position : "Programmer",
+                positions : [
+                    {
+                        title: "Programmer",
+                        type: "c"
+                    }
+                ],
                 start : [1997, 7, 1],
                 end : [1998, 9, 1],
-                desc : ["Lorem ipsum..."],
+                desc : [""],
                 business : ["Convertible bonds, Option Agreements"],
                 skills : ["C++", "MFC", "SQL", "Visual Basic 6", "ASP"]
             },
             {
                 where : "Natwest Markets",
-                type : "c",
-                position : "Programmer",
+                positions : [
+                    {
+                        title: "Programmer",
+                        type: "c"
+                    }
+                ],
                 start : [1996, 8, 1],
                 end : [1997, 6, 1],
-                desc : ["Lorem ipsum..."],
+                desc : [""],
                 business : ["Commericial banking back-office trade processing"],
                 skills : ["C++", "MFC", "SQL"]
             },
             {
                 where : "Motability Finance Limited",
-                type : "c",
-                position : "Programmer",
+                positions : [
+                    {
+                        title: "Programmer",
+                        type: "c"
+                    }
+                ],
                 start : [1995, 1, 1],
                 end : [1996, 7, 1],
-                desc : ["Lorem ipsum..."],
+                desc : [""],
                 business : ["Application Security"],
                 skills : ["C++", "MFC", "COM", "OLE", "SQL"]
             },
             {
                 where : "Centrefile Limited",
-                type : "c",
-                position : "Programmer, Database Analyst",
+                positions : [
+                    {
+                        title: "Programmer, Database Analyst",
+                        type: "c"
+                    }
+                ],
                 start : [1993, 5, 1],
                 end : [1994, 12, 1],
-                desc : ["Lorem ipsum..."],
+                desc : [""],
                 business : ["Retail Banking Application Security"],
                 skills : ["C++", "MFC", "SQL"]
             },
             {
                 where : "Microsoft UK",
-                type : "c",
-                position : "Consultant",
+                positions : [
+                    {
+                        title: "Consultant",
+                        type: "c"
+                    }
+                ],
                 start : [1993, 2, 1],
                 end : [1993, 4, 1],
-                desc : ["Lorem ipsum..."],
+                desc : [""],
                 business : ["Customer management solutions"],
                 skills : ["Visual Basic 2", "Access", "SQL"]
             },
             {
                 where : "Midland Bank",
-                type : "c",
-                position : "Programmer",
+                positions : [
+                    {
+                        title: "Programmer",
+                        type: "c"
+                    }
+                ],
                 start : [1992, 6, 1],
                 end : [1992, 12, 1],
-                desc : ["Lorem ipsum..."],
+                desc : [""],
                 business : ["Retail banking"],
                 skills : ["OS/2", "C", "Embedded SQL"]
             },
             {
                 where : "4-Sight Limited",
-                type : "c",
-                position : "Programmer",
+                positions : [
+                    {
+                        title: "Programmer",
+                        type: "c"
+                    }
+                ],
                 start : [1992, 2, 1],
                 end : [1992, 5, 31],
                 desc : ["Lopem ipsum..."],
@@ -233,11 +309,15 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
             },
             {
                 where : "IBM UK Laboratories Limited",
-                type : "p",
-                position : "Systems Programmer",
+                positions : [
+                    {
+                        title: "Systems Programmer",
+                        type: "c"
+                    }
+                ],
                 start : [1989, 9, 1],
                 end : [1991, 9, 31],
-                desc : ["Lorem ipsum..."],
+                desc : [""],
                 business : ["IBM OS/2"],
                 skills : ["OS/2", "C", "C++"]
             }
@@ -246,6 +326,10 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
         angular.forEach ($scope.History, function(v,k) {
             v.start = makeDate(v.start);
             v.end = makeDate(v.end);
+            angular.forEach (v.positions, function(v2) {
+                v2.start = makeDate(v2.start);
+                v2.end = makeDate(v2.end);
+            });
         });
 
 //        $http.jsonp ('data/employment.json?callback=JSON_CALLBACK', {cache:false}).success (function (data){
@@ -264,10 +348,6 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
 cvControllers.controller('AudioController', ['$scope', '$sce',
     function ($scope, $sce) {
 
-        $scope.onPlay = function(i) {
-            $scope.Track = $scope.Soundcloud[i].src;
-        }
-
         $scope.Audios = [
             {
                 head: "Soundscapes",
@@ -279,7 +359,7 @@ cvControllers.controller('AudioController', ['$scope', '$sce',
                     },
                     {
                         title: "Alien Control Room",
-                        desc: "Lorem ipsum...",
+                        desc: "",
                         track: "Atmos"
                     }
 
@@ -300,7 +380,7 @@ cvControllers.controller('AudioController', ['$scope', '$sce',
                     },
                     {
                         title: "Damage Report",
-                        desc: "Lorem ipsum...",
+                        desc: "",
                         track: "Zen"
                     }
 
@@ -321,12 +401,12 @@ cvControllers.controller('AudioController', ['$scope', '$sce',
                     },
                     {
                         title: "Death of an Artificial Intelligence",
-                        desc: "Lorem ipsum...",
+                        desc: "",
                         track: "Death of an AI"
                     },
                     {
                         title: "Cyborg Life Support System",
-                        desc: "Lorem ipsum...",
+                        desc: "",
                         track: "Cyborg Life Support System"
                     }
 
@@ -364,19 +444,19 @@ cvControllers.controller('VideoController', ['$scope', '$sce',
 
         $scope.onPlay = function(i) {
             $scope.Track = $scope.YouTubeVideos[i].src;
-        }
+        };
 
         $scope.YouTubeVideos = [
             {
                 // <iframe width="420" height="315" src="//www.youtube.com/embed/pdTgocquLgI" frameborder="0" allowfullscreen></iframe>
                 head : "Rathmore National School Fashion Show DVD Trailer",
-                desc : "Lorem ipsum...",
+                desc : "",
                 track: "pdTgocquLgI"
             },
             {
                 // <iframe width="420" height="315" src="//www.youtube.com/embed/pdTgocquLgI" frameborder="0" allowfullscreen></iframe>
                 head : "Rathmore National School Fashion Show DVD Teaser",
-                desc : "Lorem ipsum...",
+                desc : "",
                 track: "zgNIccPet4s"
             }
 

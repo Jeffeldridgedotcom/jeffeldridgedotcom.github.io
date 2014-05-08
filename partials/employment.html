@@ -16,20 +16,33 @@
                     <!--<span ng-show="$index >= ShowLast" style="font-size: xx-small">(see more)</span>-->
                 </small>
             </h2>
-            <div>
-                <h4>
-                    {{job.position}}&nbsp;
-                    <small ng-switch="job.type">
-                        <span ng-switch-when="p">(Permanent)</span>
-                        <span ng-switch-when="c">(Contract)</span>
-
+            <div ng-repeat="pos in job.positions" class="section">
+                <h3>
+                    {{pos.title}}&nbsp;
+                    <small ng-show="job.positions.length > 1">
+                        {{pos.start | date :'MMM yyyy'}} -
+                        <span ng-show="pos.end===''">present</span>
+                        <span ng-show="pos.end!=''">{{pos.end | date :'MMM yyyy'}}</span>
                     </small>
-                </h4>
-                <p ng-repeat="desc in job.desc track by $index" class="jobdesc">{{desc}}</p>
+                    <small>
+                        <span ng-switch="pos.type">
+                            <span ng-switch-when="p">(Permanent)</span>
+                            <span ng-switch-when="c">(Contract)</span>
+                        </span>
+                    </small>
+                </h3>
+                <ul ng-show="$index < ShowLast">
+                    <li ng-show="desc !== ''" ng-repeat="desc in pos.desc track by $index" ng-bind-html="desc"></li>
+                </ul>
+
+
+            </div>
+
+            <div ng-show="$index < ShowLast">
 
                 <div class="col-xs-6 col-sm-4 placeholder">
                     <h5>Skills</h5>
-                    <ul class="list-inline list-unstyled text-info">
+                    <ul class="list-inline list-unstyled text-warning">
                         <li ng-repeat="skill in job.skills">{{skill}}</li>
                     </ul>
                 </div>
@@ -37,7 +50,7 @@
                 <div class="col-xs-6 col-sm-4 placeholder">
                     <div ng-show="job.business.length > 0">
                         <h5>Business</h5>
-                        <ul class="list-inline list-unstyled text-info">
+                        <ul class="list-inline list-unstyled text-warning">
                             <li ng-repeat="business in job.business track by $index">{{business}}</li>
                         </ul>
                     </div>
@@ -46,6 +59,8 @@
             </div>
 
         </div>
+
+
     </div>
 
 
