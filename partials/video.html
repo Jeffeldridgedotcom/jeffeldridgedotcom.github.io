@@ -16,14 +16,47 @@
         <!--</div>-->
     <!--</div>-->
 <!--</div>-->
+<style>
+    .mfp-fade.mfp-bg {
+        opacity: 0.001; /* Chrome opacity transition bug */
+        -webkit-transition: all 0.15s ease-out;
+        -moz-transition: all 0.15s ease-out;
+        transition: all 0.15s ease-out;
+    }
+    .mfp-fade.mfp-bg.mfp-ready {
+        opacity: 0.8;
+    }
+    .mfp-fade.mfp-bg.mfp-removing {
+        opacity: 0;
+    }
 
-<div class="section">
-    <h2>XXX-CGI-XXX</h2>
-    <div ng-repeat="video in Videos" magnific-videos>
-        <a href="{{video.track}}" title="{{video.title}}" data-Source="">
-            <img src="http://findicons.com/files/icons/59/crystal_bw/256/windows_media_player.png" width="128">
-        </a>
+    .mfp-fade.mfp-wrap .mfp-content {
+        opacity: 0;
+        -webkit-transition: all 0.15s ease-out;
+        -moz-transition: all 0.15s ease-out;
+        transition: all 0.15s ease-out;
+    }
+    .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+        opacity: 1;
+    }
+    .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+        opacity: 0;
+    }
+</style>
+
+    <div class="section" ng-repeat="video in YouTubeVideos" magnific-videos>
+        <h2>{{video.head}}</h2>
+        <p>{{video.desc}}</p>
+        <div ng-repeat="track in video.tracks">
+            <a href="{{track.url}}">
+                <span class="glyphicon glyphicon-play"></span>&nbsp;{{track.title}}
+            </a>
+            <br/>
+        </div>
     </div>
+
+
+
 </div>
 
 

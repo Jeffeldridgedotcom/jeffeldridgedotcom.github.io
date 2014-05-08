@@ -27,11 +27,11 @@ coverControllers.controller('CoverController', ['$scope', '$timeout',
                 $scope.Landscape = landscapes[nb % landscapes.length];
                 $scope.Portrait = portraits[nb % portraits.length];
                 $timeout (cycleBackground, delay);
-            }
+            };
 
         $scope.bg = function () {
             return nb % 2 === 0;
-        }
+        };
 
         landscapes = _.shuffle(landscapes);
         landscapes = _.shuffle(landscapes);

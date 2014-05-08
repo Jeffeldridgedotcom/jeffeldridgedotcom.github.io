@@ -429,45 +429,34 @@ cvControllers.controller('AudioController', ['$scope', '$sce',
 cvControllers.controller('VideoController', ['$scope', '$sce',
     function ($scope, $sce) {
 
-        $scope.CurrentTrack = "assets/video/Static-512x288.mp4";
-
-
-        $scope.Videos = [
-            {
-                title: "Cyber-minons",
-                desc: "A mash-up of Gru's Minions (Despicable Me) and Cybermen (Doctor Who)",
-                track: "assets/video/Cyberminion.mp4"
-                // track: "assets/video/Static-512x288.mp4"
-
-            }
-        ];
-
-        $scope.onPlay = function(i) {
-            $scope.Track = $scope.YouTubeVideos[i].src;
-        };
-
         $scope.YouTubeVideos = [
             {
-                // <iframe width="420" height="315" src="//www.youtube.com/embed/pdTgocquLgI" frameborder="0" allowfullscreen></iframe>
-                head : "Rathmore National School Fashion Show DVD Trailer",
-                desc : "",
-                track: "pdTgocquLgI"
+                head: "3D Animations",
+                desc: "Modelled and rendered in AutoDesk's 3DS Studio Max, edited in Adobe Premier Pro CC 6",
+                tracks: [
+                    {
+                        title: "Cyber-Minions",
+                        url: "https://www.youtube.com/watch?v=on6uUuuFRP8"
+                    }
+
+                ]
             },
             {
-                // <iframe width="420" height="315" src="//www.youtube.com/embed/pdTgocquLgI" frameborder="0" allowfullscreen></iframe>
-                head : "Rathmore National School Fashion Show DVD Teaser",
-                desc : "",
-                track: "zgNIccPet4s"
+                head: "Rathmore National School Fashion Show DVD",
+                desc: "Filmed at Kilashee House Hotel, Naas on 30th October 2008, the footage was edited together using Abobe Premier Elements 7, and authored into a DVD using DVD Lab Pro 2",
+                tracks: [
+                    {
+                        title: "DVD Teaser Trailer",
+                        url: "https://www.youtube.com/watch?v=zgNIccPet4s"
+                    },
+                    {
+                        title: "Full trailer",
+                        url: "http://www.youtube.com/watch?v=pdTgocquLgI?autoplay=1"
+                    }
+                ]
             }
 
         ];
-
-        angular.forEach($scope.Videos, function(v) {
-            var src = "//www.youtube.com/embed/" + v.track;
-            v.src = $sce.trustAsResourceUrl(src);
-        });
-
-        $scope.Track = $scope.Videos[0].src;
 
     }
 ]);
