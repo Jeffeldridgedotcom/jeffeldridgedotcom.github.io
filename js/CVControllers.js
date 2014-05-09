@@ -27,6 +27,11 @@ var cvNavigation = [
 
 var portfolioNav = [
     {
+        title : "Code",
+        url : "/code",
+        href : "#code"
+    },
+    {
         title : "Audio",
         url : "/audio",
         href : "#audio"
@@ -92,7 +97,7 @@ cvControllers.controller('ProfileController', ['$scope',
     }
 ]);
 
-cvControllers.controller('TechnologyController', ['$scope',
+cvControllers.controller('CodeController', ['$scope',
     function ($scope) {
 
     }

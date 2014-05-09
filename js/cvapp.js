@@ -35,6 +35,10 @@ cvApp.config(['$routeProvider',
                 templateUrl: 'partials/art.html',
                 controller: 'ArtController'
             }).
+            when('/code', {
+                templateUrl: 'partials/code.html',
+                controller: 'CodeController'
+            }).
             otherwise({
                 redirectTo: '/profile'
             });
