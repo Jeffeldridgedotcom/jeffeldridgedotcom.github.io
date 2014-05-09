@@ -2,20 +2,11 @@
 
     <h2>3D Modelling</h2>
 
-    <div class="row">
-        <div ng-repeat="piece in ThreeDeeArtwork" class="col-xs-6 col-sm-4" magnific-images>
-            <a href="{{piece.src}}" title="{{piece.title}}" data-Source="{{piece.png}}">
-                <img ng-src="{{piece.poster}}" width="240" />
-            </a>
-            <h5>{{piece.title}}</h5>
-        </div>
+    <div id="unitlab" magnific-images>
+        <a ng-repeat="piece in ThreeDeeArtwork" href="{{piece.src}}" title="{{piece.title}}" data-Source="{{piece.png}}">
+            <img ng-src="{{piece.poster}}" width="240" />
+        </a>
     </div>
-
-    <!--<div id="unitlabx" magnific-images>-->
-        <!--<a ng-repeat="piece in ThreeDeeArtwork" href="{{piece.src}}" title="{{piece.title}}" data-Source="{{piece.png}}">-->
-            <!--<img ng-src="{{piece.poster}}" width="240" />-->
-        <!--</a>-->
-    <!--</div>-->
 
     <h2>2D Art for Platform Game</h2>
     <div id="dalekinvasion" magnific-images>
