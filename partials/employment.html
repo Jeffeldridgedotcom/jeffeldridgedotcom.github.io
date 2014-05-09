@@ -42,16 +42,20 @@
 
                 <div class="col-xs-6 col-sm-4 placeholder">
                     <h5>Skills</h5>
-                    <ul class="list-inline list-unstyled text-warning">
-                        <li ng-repeat="skill in job.skills">{{skill}}</li>
+                    <ul class="list-inline list-unstyled">
+                        <li ng-repeat="skill in job.skills">
+                            <span class="label label-default">{{skill}}</span>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="col-xs-6 col-sm-4 placeholder">
                     <div ng-show="job.business.length > 0">
                         <h5>Business</h5>
-                        <ul class="list-inline list-unstyled text-warning">
-                            <li ng-repeat="business in job.business track by $index">{{business}}</li>
+                        <ul class="list-inline list-unstyled">
+                            <li ng-repeat="business in job.business track by $index">
+                                <span class="label label-primary">{{business}}</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
