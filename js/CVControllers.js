@@ -121,11 +121,12 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
             $scope.History.length === $scope.ShowLast;
         };
 
-        $scope.onSeeAll = function () {
-            $scope.ShowLast = $scope.History.length;
+        $scope.ShowAll = function () {
+            $scope.History = history;
         };
 
-        $scope.History = [
+        var history = [
+        // $scope.History = [
             {
                 where : "Rathmore IT Solutions",
                 positions : [
@@ -328,7 +329,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
             }
         ];
 
-        angular.forEach ($scope.History, function(v,k) {
+        angular.forEach (history, function(v,k) {
             v.start = makeDate(v.start);
             v.end = makeDate(v.end);
             angular.forEach (v.positions, function(v2) {
@@ -336,6 +337,8 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 v2.end = makeDate(v2.end);
             });
         });
+
+        $scope.History = history.slice(0,$scope.ShowLast);
 
 //        $http.jsonp ('data/employment.json?callback=JSON_CALLBACK', {cache:false}).success (function (data){
 //           $scope.History = data.employment;
