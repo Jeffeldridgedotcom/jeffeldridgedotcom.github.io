@@ -443,6 +443,10 @@ cvControllers.controller('VideoController', ['$scope', '$sce',
                 desc: "Modelled and rendered in AutoDesk's 3DS Studio Max, edited in Adobe Premier Pro CC 6",
                 tracks: [
                     {
+                        title: "TARDIS arrives in the lab at UNIT",
+                        url: "https://www.youtube.com/watch?v=kLVrDU5tb-k"
+                    },
+                    {
                         title: "Cyber-Minions",
                         url: "https://www.youtube.com/watch?v=on6uUuuFRP8"
                     }
