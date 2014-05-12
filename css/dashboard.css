@@ -7,19 +7,24 @@
     padding-bottom: 2px;
 }
 
-.section>h3 {
-    /*border-left: 10px solid #f0ad4e;*/
-    padding-left: 15px;
-    padding-bottom: 2px;
+@media (min-width: 768px) {
+    .section > h3 {
+
+        /*border-left: 10px solid #f0ad4e;*/
+        padding-left: 15px;
+        padding-bottom: 2px;
+    }
+
+    .section>ul {
+        line-height: 2.5;
+    }
+
 }
 
 .section>img {
     margin-bottom: 20px;
 }
 
-.section>ul {
-    line-height: 2.5;
-}
 
 
 video {
