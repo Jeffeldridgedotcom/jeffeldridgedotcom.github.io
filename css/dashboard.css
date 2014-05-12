@@ -21,6 +21,16 @@
 
 }
 
+@media (max-width: 768px) {
+    .section>ul {
+        list-style: none;
+    }
+
+    .section>ul>li {
+        margin-bottom: 10px;
+    }
+}
+
 .section>img {
     margin-bottom: 20px;
 }
