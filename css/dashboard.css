@@ -17,6 +17,10 @@
     margin-bottom: 20px;
 }
 
+.section>ul {
+    line-height: 2.5;
+}
+
 
 video {
     width: 1024;
@@ -188,3 +192,4 @@ body {
         display: none;
     }
 }
+
