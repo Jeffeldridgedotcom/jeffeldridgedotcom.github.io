@@ -512,11 +512,13 @@ cvControllers.controller('ArtController', ['$scope',
             },
             {
                 src : 'images/portfolio/cyberminion/Close Up BW.jpg',
+                png : 'images/portfolio/cyberminion/Close Up BW.png',
                 poster : 'images/portfolio/cyberminion/poster/Close Up BW.jpg',
                 title : "1960's B&W Close-Up"
             },
             {
                 src : 'images/portfolio/cyberminion/Close Up.jpg',
+                png : 'images/portfolio/cyberminion/Close Up.png',
                 poster : 'images/portfolio/cyberminion/poster/Close Up.jpg',
                 title : "Up close and personal"
             },
@@ -527,16 +529,19 @@ cvControllers.controller('ArtController', ['$scope',
 //            },
             {
                 src : 'images/portfolio/cyberminion/Group Blurred.jpg',
+                png : 'images/portfolio/cyberminion/Group Blurred.png',
                 poster : 'images/portfolio/cyberminion/poster/Group Blurred.jpg',
                 title : "Leader and troopers"
             },
             {
                 src : 'images/portfolio/cyberminion/Leader.jpg',
+                png : 'images/portfolio/cyberminion/Leader.png',
                 poster : 'images/portfolio/cyberminion/poster/Leader.jpg',
                 title : "Cyber-minion Leader"
             },
             {
                 src : 'images/portfolio/cyberminion/Trooper.jpg',
+                png : 'images/portfolio/cyberminion/Trooper.png',
                 poster : 'images/portfolio/cyberminion/poster/Trooper.jpg',
                 title : "Cyber-minion Trooper"
             }
