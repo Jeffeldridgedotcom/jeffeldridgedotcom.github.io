@@ -126,21 +126,24 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
         };
 
         var history = [
-        // $scope.History = [
             {
                 where : "Rathmore IT Solutions",
                 positions : [
                     {
                         title: "Consultant",
                         type: "p",
-                        desc : [""],
+                        desc : [
+                            "Implementing Node.js and Javascript Secondary School Library System",
+                            "Designed and implemented <a href='http://www.dnnsoftware.com/' target='_blank'>DotNetNuke</a> based website for <a href='http://www.eadestowngaa.ie' target='_blank'>Eadestown GAA</a>",
+                            "Designed and developed ASP.NET and SQL Server based Primary School Library System",
+                        ],
                         start : [2010, 11, 1],
                         end : ""
                     }
                 ],
                 start : [2010, 11, 1],
                 end : "",
-                business : ["Education"],
+                business : ["Web Design", "Education Software"],
                 skills : ["Javascript", "Node.js", "Angular.js", "C#", "ASP.NET"]
             },
             {
@@ -184,7 +187,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 ],
                 start : [1999, 9, 1],
                 end : [2010, 10, 22],
-                business : ["Software Localization"],
+                business : ["Software Localization", "Customer Engagement"],
                 skills : ["C++", "C#", "SQL", "ASP.NET", "Javascript", "Perl"]
             },
             {

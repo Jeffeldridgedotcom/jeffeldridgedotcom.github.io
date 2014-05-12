@@ -22,6 +22,12 @@
 }
 
 @media (max-width: 768px) {
+
+    .table-responsive {
+        border: none;
+        margin-left: -5px;
+    }
+
     .section>ul {
         list-style: none;
     }
