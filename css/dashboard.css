@@ -26,9 +26,13 @@
         list-style: none;
     }
 
+    .section>ul {
+        padding-left: 0px;
+    }
+
     .section>ul>li {
         margin-bottom: 10px;
-        padding-left: 0px;
+
     }
 }
 
