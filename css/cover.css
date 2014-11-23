@@ -20,6 +20,49 @@
     min-height: 50%;
 }
 
+.background-image-overlay {
+    display:block;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+
+    background:url(../images/background-image-overlay.png) repeat;
+}
+
+
+html {
+    transition: background-image 1s ease-in-out;
+    background-repeat: no-repeat;
+    background-position:  center center;
+    background-attachment:  fixed;
+}
+
+
+.bg1 {
+    transition: background-image 1s ease-in-out;
+    background-image: url('../images/covers/blurred/Close Up.jpg');
+}
+
+.bg2 {
+    transition: background-image 1s ease-in-out;
+    background-image: url('../images/covers/blurred/Final 1.jpg');
+}
+
+.bg3 {
+    transition: background-image 1s ease-in-out;
+    background-image: url('../images/covers/blurred/Group Blurred.jpg');
+}
+
+.bg4 {
+    transition: background-image 1s ease-in-out;
+    background-image: url('../images/covers/blurred/Final 3.jpg');
+}
+
+
+
 blockquote {
     border-left: none;
     font-style: italic;
@@ -47,7 +90,7 @@ a:hover {
  * Base structure
  */
 
-html,
+/*html,*/
 body {
     height: 100%;
     background-color: #333;
