@@ -8,6 +8,23 @@
         }
     </style>
 
+    <script type="text/javascript">
+        <!--//--><![CDATA[//><!--
+        var images = new Array();
+        function preload() {
+            for (i = 0; i < preload.arguments.length; i++) {
+                images[i] = new Image();
+                images[i].src = preload.arguments[i];
+            }
+        }
+        preload("images/covers/blurred/Close Up.jpg",
+                "images/covers/blurred/Final 1.jpg",
+                "images/covers/blurred/Group Blurred.jpg",
+                "images/covers/blurred/Final 3.jpg"
+        );
+        //--><!]]>
+    </script>
+
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
