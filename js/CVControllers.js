@@ -25,12 +25,15 @@ var cvNavigation = [
 //    }
 ];
 
-var portfolioNav = [
+var codeNav = [
     {
         title : "Code",
         url : "/code",
         href : "#code"
-    },
+    }
+];
+
+var portfolioNav = [
     {
         title : "Audio",
         url : "/audio",
@@ -66,7 +69,11 @@ cvControllers.controller('NavController', ['$scope', '$location',
                 items : cvNavigation
             },
             {
-                head : "Portfolio",
+                head : "Code Portfolio",
+                items : codeNav
+            },
+            {
+                head : "Video Game Design",
                 items : portfolioNav
             }
         ];
