@@ -193,7 +193,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 start : [2013, 10, 1],
                 end : [2014, 6, 30],
                 business : ["Video Game Design", "Gameification"],
-                skills : ["C#", "Unity", "Javascript", "Angular.js", "Audio Design", "Narrative Design", "2D Art", "3D Art"],
+                skills : ["C#", "Unity", "Javascript", "Angular.js", "Audio Design", "Narrative Design", "2D Art", "3D Art", "3DS Max", "Photoshop"],
                 platforms: ["Ubuntu 14.04", "Windows 7"]
             },
             {
