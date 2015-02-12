@@ -17,12 +17,7 @@ var cvNavigation = [
         title : "Employment",
         url : "/employment",
         href : "#employment"
-    } //,
-//    {
-//        title : "Technology",
-//        url : "/technology",
-//        href : "#technology"
-//    }
+    }
 ];
 
 var codeNav = [
@@ -98,7 +93,7 @@ cvControllers.controller('ProfileController', ['$scope',
         $scope.Email = "jeff@rathmoreit.com";
         $scope.PhoneNumber = "+353 87 916 2652";
 
-        $scope.ShortMenu = cvNavigation
+        $scope.ShortMenu = _.union(cvNavigation, codeNav);
 
     }
 ]);
@@ -181,8 +176,8 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                         title: "Student of Video Game Design and Development",
                         type: "e",
                         desc : [
-                            "Awarded FETAC Level 6 Advanced Cerificate in Media Production",
-                            "Graduted top of the class with 7 Distinctions",
+                            "Awarded FETAC Level 6 Advanced Certificate in Media Production",
+                            "Graduated top of the class with 7 Distinctions",
                             "Led development of First Person 3D adventure game",
                             "Audio design and programming of 2D game"
                         ],
@@ -193,7 +188,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 start : [2013, 10, 1],
                 end : [2014, 6, 30],
                 business : ["Video Game Design", "Gameification"],
-                skills : ["C#", "Unity", "Javascript", "Angular.js", "Audio Design", "Narrative Design", "2D Art", "3D Art", "3DS Max", "Photoshop"],
+                skills : ["C#", "Unity", "Javascript", "Angular.js", "Audio Design", "Narrative Design", "3DS Max", "Photoshop", "Reaper", "FMOD"],
                 platforms: ["Ubuntu 14.04", "Windows 7"]
             },
             {
@@ -205,7 +200,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                         desc : [
                             "Designed and implemented <a href='http://www.dnnsoftware.com/' target='_blank'>DotNetNuke</a> based website for <a href='http://www.eadestowngaa.ie' target='_blank'>Eadestown GAA</a>",
                             "Designed and developed ASP.NET and SQL Server based Primary School Library System",
-                            "Completed Cisco Certified Network Associate course",
+                            "Completed <a href='http://en.wikipedia.org/wiki/CCNA' target='_blank'>Cisco Certified Network Associate</a> course",
                             "Design and deployed Windows Server Active Directory network, including wireless LAN to medium sized primary school"
                         ],
                         start : [2010, 11, 1],
@@ -274,6 +269,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 start : [1999, 3, 1],
                 end : [1999, 9, 1],
                 desc : [""],
+                platforms: ["Windows NT"],
                 business : ["e-Commerce micro-transactions"],
                 skills : ["C++", "MFC"]
             },
@@ -288,7 +284,8 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 start : [1998, 10, 1],
                 end : [1999, 2, 28],
                 desc : [""],
-                business : ["Repurchase Agreements (Repos)"],
+                platforms: ["Windows NT"],
+                business : ["Repurchase Agreements"],
                 skills : ["C++", "MFC"]
             },
             {
@@ -302,7 +299,8 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 start : [1997, 7, 1],
                 end : [1998, 9, 1],
                 desc : [""],
-                business : ["Convertible bonds, Option Agreements"],
+                platforms: ["Windows NT", "Solaris Unix"],
+                business : ["Convertible Bonds"],
                 skills : ["C++", "MFC", "SQL", "Visual Basic 6", "ASP"]
             },
             {
@@ -316,7 +314,8 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 start : [1996, 8, 1],
                 end : [1997, 6, 1],
                 desc : [""],
-                business : ["Commericial banking back-office trade processing"],
+                platforms: ["Windows NT", "Solaris Unix"],
+                business : ["Commericial Banking", "Back Office", "Trade Processing"],
                 skills : ["C++", "MFC", "SQL"]
             },
             {
@@ -330,7 +329,8 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 start : [1995, 1, 1],
                 end : [1996, 7, 1],
                 desc : [""],
-                business : ["Application Security"],
+                platforms: ["Windows NT"],
+                business : ["Automotive Leasing", "Application Security"],
                 skills : ["C++", "MFC", "COM", "OLE", "SQL"]
             },
             {
@@ -344,6 +344,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 start : [1993, 5, 1],
                 end : [1994, 12, 1],
                 desc : [""],
+                platforms: ["Windows NT"],
                 business : ["Retail Banking Application Security"],
                 skills : ["C++", "MFC", "SQL"]
             },
@@ -358,6 +359,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 start : [1993, 2, 1],
                 end : [1993, 4, 1],
                 desc : [""],
+                platforms: ["Windows NT"],
                 business : ["Customer management solutions"],
                 skills : ["Visual Basic 2", "Access", "SQL"]
             },
@@ -372,8 +374,9 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 start : [1992, 6, 1],
                 end : [1992, 12, 1],
                 desc : [""],
+                platforms: ["OS/2"],
                 business : ["Retail banking"],
-                skills : ["OS/2", "C", "Embedded SQL"]
+                skills : ["C", "SQL"]
             },
             {
                 where : "4-Sight Limited",
@@ -386,6 +389,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 start : [1992, 2, 1],
                 end : [1992, 5, 31],
                 desc : ["Lopem ipsum..."],
+                platforms: ["Windows 3.1"],
                 business : ["Windows Fax Software"],
                 skills : ["C", "Windows DDK"]
             },
@@ -400,8 +404,9 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 start : [1989, 9, 1],
                 end : [1991, 9, 31],
                 desc : [""],
-                business : ["IBM OS/2"],
-                skills : ["OS/2", "C", "C++"]
+                platforms: ["OS/2"],
+                business : ["Technical Publishing"],
+                skills : ["C", "C++", "SGML"]
             }
         ];
 
@@ -415,17 +420,6 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
         });
 
         $scope.History = history.slice(0,$scope.ShowLast);
-
-//        $http.jsonp ('data/employment.json?callback=JSON_CALLBACK', {cache:false}).success (function (data){
-//           $scope.History = data.employment;
-//           angular.forEach ($scope.History, function(v,k) {
-//               v.start = makeDate(v.start);
-//               v.end = makeDate(v.end);
-//           });
-//        }).error(function(data, status, headers, config) {
-//            console.log ("$$$");
-//        });
-
 
     }]);
 
