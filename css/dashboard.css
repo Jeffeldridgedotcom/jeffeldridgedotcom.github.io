@@ -25,6 +25,18 @@
     padding-left: 30px;
 }
 
+.section>ul.flush {
+    padding-left: 0px;
+}
+
+.cloud {
+
+}
+
+.cloud h5 {
+    color: #999;
+}
+
 @media (max-width: 768px) {
 
     .table-responsive {

@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="section">
+
+        <div class="row" ng-repeat="s in Sites">
+            <div class="col-md-12 section">
+                <h2>{{s.name}}</h2>
+                <p>{{s.description}}</p>
+                <p>
+                    <ul class="list-inline list-unstyled" style="padding-left: 0px">
+                        <li ng-repeat="t in s.tech">
+                            <span class="label label-primary">{{t}}</span>
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    See <a ng-href="{{s.url}}" target="_blank">{{s.name}}</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>

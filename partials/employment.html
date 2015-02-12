@@ -28,6 +28,7 @@
                         <span ng-switch="pos.type">
                             <span ng-switch-when="p">(Permanent)</span>
                             <span ng-switch-when="c">(Contract)</span>
+                            <span ng-switch-when="e">(Education)</span>
                         </span>
                     </small>
                 </h3>
@@ -40,7 +41,17 @@
 
             <div ng-show="$index < ShowLast">
 
-                <div class="col-xs-6 col-sm-4 placeholder">
+                <div class="col-xs-12 col-sm-4 col-md-4 placeholder cloud" ng-show="job.platforms">
+                    <h5 ng-show="job.skills.length === 1">Platform</h5>
+                    <h5 ng-show="job.skills.length > 1">Platforms</h5>
+                    <ul class="list-inline list-unstyled">
+                        <li ng-repeat="platform in job.platforms">
+                            <span class="label label-success">{{platform}}</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4 placeholder cloud">
                     <h5>Skills</h5>
                     <ul class="list-inline list-unstyled">
                         <li ng-repeat="skill in job.skills">
@@ -49,7 +60,7 @@
                     </ul>
                 </div>
 
-                <div class="col-xs-6 col-sm-4 placeholder">
+                <div class="col-xs-12 col-sm-4 col-md-4 placeholder cloud">
                     <div ng-show="job.business.length > 0">
                         <h5>Business</h5>
                         <ul class="list-inline list-unstyled">

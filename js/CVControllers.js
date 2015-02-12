@@ -30,10 +30,12 @@ var codeNav = [
         title : "Code",
         url : "/code",
         href : "#code"
-    }
-];
-
-var portfolioNav = [
+    },
+    {
+        title: "Web",
+        url: "/web",
+        href: "#web"
+    },
     {
         title : "Audio",
         url : "/audio",
@@ -54,6 +56,7 @@ var portfolioNav = [
         url : "/games",
         href : "#games"
     }
+
 ];
 
 cvControllers.controller('NavController', ['$scope', '$location',
@@ -69,12 +72,8 @@ cvControllers.controller('NavController', ['$scope', '$location',
                 items : cvNavigation
             },
             {
-                head : "Code Portfolio",
+                head : "Portfolio",
                 items : codeNav
-            },
-            {
-                head : "Video Game Design",
-                items : portfolioNav
             }
         ];
 
@@ -99,13 +98,35 @@ cvControllers.controller('ProfileController', ['$scope',
         $scope.Email = "jeff@rathmoreit.com";
         $scope.PhoneNumber = "+353 87 916 2652";
 
-        $scope.ShortMenu = _.union(cvNavigation, portfolioNav);
+        $scope.ShortMenu = cvNavigation
 
     }
 ]);
 
 cvControllers.controller('CodeController', ['$scope',
     function ($scope) {
+
+    }
+]);
+
+cvControllers.controller('WebController', ['$scope',
+    function ($scope) {
+
+        $scope.Sites = [
+            {
+                name: 'Les Merleaux',
+                description: 'A site showcasing a holiday home for rent',
+                tech: ['HTML 5', 'Bootstrap'],
+                url: 'http://www.lesmerleauxduras.com'
+            },
+            {
+                name: 'Eadestown GAA',
+                description: 'News, fixtures, information, photo galleries and club lotto results',
+                tech: ['DotNetNuke', 'Angular.js', 'jQuery'],
+                url: 'http://www.eadestowngaa.ie'
+            }
+        ];
+
 
     }
 ]);
@@ -122,7 +143,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
 
         $scope.History = [];
 
-        $scope.ShowLast = 2;
+        $scope.ShowLast = 4;
 
         $scope.SeeingAll = function () {
             $scope.History.length === $scope.ShowLast;
@@ -140,18 +161,62 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                         title: "Consultant",
                         type: "p",
                         desc : [
-                            "Implementing Node.js and Javascript Secondary School Library System",
+                            "Developing <a href='http://thepibrary.net' target='_blank'>Pibrary</a>, a Node.js and Angular.js library management system on a Raspberry Pi",
+                            "Pibrary deployed in <a href='http://www.phcol.ie' target='_blank'>Piper's Hill College</a> November 2014. 1000+ clients accessing using iPads"
+                        ],
+                        start : [2014, 7, 1],
+                        end : ""
+                    }
+                ],
+                start : [2014, 7, 1],
+                end : "",
+                business : ["Web Application", "School Library"],
+                skills : ["Javascript", "Node.js", "Angular.js", "MongoDB"],
+                platforms: ["Ubuntu 14.04", "Arch Linux"]
+            },
+            {
+                where : "Cenit College",
+                positions : [
+                    {
+                        title: "Student of Video Game Design and Development",
+                        type: "e",
+                        desc : [
+                            "Awarded FETAC Level 6 Advanced Cerificate in Media Production",
+                            "Graduted top of the class with 7 Distinctions",
+                            "Led development of First Person 3D adventure game",
+                            "Audio design and programming of 2D game"
+                        ],
+                        start : [2013, 10, 14],
+                        end : [2014, 6, 30]
+                    }
+                ],
+                start : [2013, 10, 1],
+                end : [2014, 6, 30],
+                business : ["Video Game Design", "Gameification"],
+                skills : ["C#", "Unity", "Javascript", "Angular.js", "Audio Design", "Narrative Design", "2D Art", "3D Art"],
+                platforms: ["Ubuntu 14.04", "Windows 7"]
+            },
+            {
+                where : "Rathmore IT Solutions",
+                positions : [
+                    {
+                        title: "Consultant",
+                        type: "p",
+                        desc : [
                             "Designed and implemented <a href='http://www.dnnsoftware.com/' target='_blank'>DotNetNuke</a> based website for <a href='http://www.eadestowngaa.ie' target='_blank'>Eadestown GAA</a>",
                             "Designed and developed ASP.NET and SQL Server based Primary School Library System",
+                            "Completed Cisco Certified Network Associate course",
+                            "Design and deployed Windows Server Active Directory network, including wireless LAN to medium sized primary school"
                         ],
                         start : [2010, 11, 1],
                         end : ""
                     }
                 ],
                 start : [2010, 11, 1],
-                end : "",
+                end : [2013, 9, 30],
                 business : ["Web Design", "Education Software"],
-                skills : ["Javascript", "Node.js", "Angular.js", "C#", "ASP.NET"]
+                skills : ["Javascript", "DotNetNuke", "Angular.js", "C#", "ASP.NET", "Windows Server Administration", "Network Design"],
+                platforms: ["Windows 7", "Windows Server 2008", "Amazon AWS"]
             },
             {
                 where : "Microsoft European Product Development Centre",
@@ -195,7 +260,8 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 start : [1999, 9, 1],
                 end : [2010, 10, 22],
                 business : ["Software Localization", "Customer Engagement"],
-                skills : ["C++", "C#", "SQL", "ASP.NET", "Javascript", "Perl"]
+                skills : ["C++", "C#", "SQL", "ASP.NET", "Javascript", "Perl"],
+                platforms: ["Windows 7", "Windows Vista", "Windows Server 2003", "Windows XP", "Windows 2000"]
             },
             {
                 where : "Natwest Magex UK",
