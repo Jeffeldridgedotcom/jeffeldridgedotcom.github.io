@@ -17,10 +17,15 @@ var cvNavigation = [
         title : "Employment",
         url : "/employment",
         href : "#employment"
+    },
+    {
+        title : "Blog",
+        url : "http://blog.jeffeldridge.com",
+        href : "http://blog.jeffeldridge.com",
+        target : "_jeffeldblog"
     }
-];
-
-var codeNav = [
+],
+codeNav = [
     {
         title : "Code",
         url : "/code",
@@ -30,7 +35,9 @@ var codeNav = [
         title: "Web",
         url: "/web",
         href: "#web"
-    },
+    }
+],
+vdgNav = [
     {
         title : "Audio",
         url : "/audio",
@@ -69,6 +76,10 @@ cvControllers.controller('NavController', ['$scope', '$location',
             {
                 head : "Portfolio",
                 items : codeNav
+            },
+            {
+                head: "Video Game Design",
+                items: vdgNav
             }
         ];
 
@@ -110,13 +121,13 @@ cvControllers.controller('WebController', ['$scope',
         $scope.Sites = [
             {
                 name: 'Les Merleaux',
-                description: 'A site showcasing a holiday home for rent',
-                tech: ['HTML 5', 'Bootstrap'],
+                description: 'A site showcasing a holiday home for rent.',
+                tech: ['HTML 5', 'Angular.js', 'Bootstrap', 'jQuery', 'SEO'],
                 url: 'http://www.lesmerleauxduras.com'
             },
             {
                 name: 'Eadestown GAA',
-                description: 'News, fixtures, information, photo galleries and club lotto results',
+                description: 'News, fixtures, information, photo galleries and club lotto results.',
                 tech: ['DotNetNuke', 'Angular.js', 'jQuery'],
                 url: 'http://www.eadestowngaa.ie'
             }
@@ -166,7 +177,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 start : [2014, 7, 1],
                 end : "",
                 business : ["Web Application", "School Library"],
-                skills : ["Javascript", "Node.js", "Angular.js", "MongoDB"],
+                skills : ["Javascript", "Node.js", "REST", "Express", "Jade", "Angular.js", "MongoDB", "SEO"],
                 platforms: ["Ubuntu 14.04", "Arch Linux"]
             },
             {
@@ -209,9 +220,9 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 ],
                 start : [2010, 11, 1],
                 end : [2013, 9, 30],
-                business : ["Web Design", "Education Software"],
+                business : ["Web Design", "Education Software", "Network Design"],
                 skills : ["Javascript", "DotNetNuke", "Angular.js", "C#", "ASP.NET", "Windows Server Administration", "Network Design"],
-                platforms: ["Windows 7", "Windows Server 2008", "Amazon AWS"]
+                platforms: ["Windows 7", "Windows Server 2008", "Amazon AWS", "Cisco IOS"]
             },
             {
                 where : "Microsoft European Product Development Centre",

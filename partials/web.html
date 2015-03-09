@@ -5,6 +5,17 @@
             <div class="col-md-12 section">
                 <h2>{{s.name}}</h2>
                 <p>{{s.description}}</p>
+
+                <div ng-show="s.name === 'Les Merleaux'">
+                    <p>A fully responsive jQuery and Bootstrap based site, Les Merleaux also features a small Angular.js application for managing rentals in multiple currencies. The property owner is able to specify rates in individual currencies or specify a base currency and an exchange rate and the application will calculate (and round up to the nearest 10) the appropriate rate.</p>
+                    <p>The site also features Search Engine Optimization (SEO), targeting key search phrases compliant with Google's latest guidelines on keyword density and structured data for business, location and reviews.</p>
+                </div>
+
+                <div ng-show="s.name === 'Eadestown GAA'">
+                    <p>Utilising the DotNetNuke platfrom for content management, Eadestown GAA are able to manage their own photo galleries, news articles and calendar. Match fixtures and past results are displayed using the <a href="cv.html#/code#fixturesandscores">Fixtures &amp; Scores</a> module.</p>
+                </div>
+
+
                 <p>
                     <ul class="list-inline list-unstyled" style="padding-left: 0px">
                         <li ng-repeat="t in s.tech">

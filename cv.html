@@ -12,11 +12,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Experienced web developer using Angular.js and Node.js in Dublin, Ireland">
+    <meta name="author" content="Jeff Eldridge">
     <link rel="shortcut icon" href="favicon.png">
 
-    <title>Jeff Eldridge</title>
+    <title>Experienced web developer, Angular.js, Node.js in Dublin | Jeff Eldridge</title>
+
+    <!-- Facebook Meta-tags -->
+    <meta property="og:url" content="http://jeffeldridge.com"/>
+    <meta property="og:title" content="Jeff Eldridge"/>
+    <meta property="og:image" content="http://jeffeldridge.com/images/portfolio/unitlab/Final%201.jpg"/>
+    <meta property="og:site_name" content="Jeff Eldridge"/>
+    <meta property="og:description" content="Application and Web Developer for hire. Javascript, Angular.js and Node.js."/>
 
     <!-- Bootstrap core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -96,7 +103,7 @@
                 <h4>{{section.head}}</h4>
                 <div class="navbar-collapse collapse">
                     <ul class="nav nav-sidebar">
-                        <li ng-repeat="item in section.items" ng-class="{active : IsActive('{{item.url}}')}"><a href="{{item.href}}">&nbsp;&nbsp;&nbsp;&nbsp;{{item.title}}</a></li>
+                        <li ng-repeat="item in section.items" ng-class="{active : IsActive('{{item.url}}')}"><a href="{{item.href}}" target="{{item.target}}">&nbsp;&nbsp;&nbsp;&nbsp;{{item.title}}</a></li>
                     </ul>
                 </div>
             </div>

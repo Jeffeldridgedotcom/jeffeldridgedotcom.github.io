@@ -1,50 +1,64 @@
 <div class="row">
-    <div class="section">
+    <div class="section col-md-12">
+
+        <h2>Pibrary</h2>
+
+        <p>Pibrary is a project to put a library management system onto a Raspberry Pi. It is aimed at schools and is intended as a near-zero cost investment.</p>
+        <p>
+            Pibrary consists of two components:
+            <ul class="list-unstyled">
+                <li><em>Orac</em>: a RESTful webservice that manages the library catalogue</li>
+                <li><em>Zen</em>: a web application providing a full Angular.js and Bootstrap UI and member management service</li>
+            </ul>
+        </p>
+        <p>Both components are built on Node.js using the Express middleware module and use MongoDB for database services. Zen utilises the Jade server side templating engine.</p>
+
+        <p><a href="https://github.com/jeffeld/pibrary" target="_blank">View code on Github</a></p>
+        <!-- **************************************************************************************************** -->
+
+        <h2 id="fixtureandscores">Fixtures &amp; Scores</h2>
+
+        <p>
+            Fixtures &amp; Scores is an <a href="https://angularjs.org/" target="_blank">Angular.js</a> directive to implement a display of upcoming fixtures and recent results, for a sports team.
+        </p>
+
+        <p>
+            The directive retrieves JSON formatted data, and displays two tables; one for upcoming fixtures, one for results. An Excel spreadsheet provides a front end, allowing users to enter their upcoming match
+            fixtures and recent scores. When saved, the Excel sheet saves a copy of the data in JSON format.
+            This can be saved into Dropbox, and retrieved by the directive.
+        </p>
+
+        <p>
+            <code>
+                &lt;fixtures src="https://your_url_here/fixtures.json?callback=JSON_CALLBACK" /&gt;
+            </code>
+        </p>
 
 
-    <h2>Fixtures &amp; Scores</h2>
+        <ul class="list-unstyled flush">
+            <li>See Fixtures &amp; Scores <a href="http://www.eadestowngaa.ie" target="_blank">in use here</a></li>
+            <li><a href="https://github.com/jeffeld/RITS-Fixtures" target="_blank">View code on Github</a></li>
+        </ul>
 
-    <p>
-        Fixtures &amp; Scores is an <a href="https://angularjs.org/" target="_blank">Angular.js</a> directive to implement a display of upcoming fixtures and recent results, for a sports team.
-    </p>
+        <!-- **************************************************************************************************** -->
 
-    <p>
-        The directive retrieves JSON formatted data, and displays two tables; one for upcoming fixtures, one for results. An Excel spreadsheet provides a front end, allowing users to enter their upcoming match
-        fixtures and recent scores. When saved, the Excel sheet saves a copy of the data in JSON format.
-        This can be saved into Dropbox, and retrieved by the directive.
-    </p>
+        <h2>School Book Store</h2>
 
-    <p>
-        <code>
-            &lt;fixtures src="https://your_url_here/fixtures.json?callback=JSON_CALLBACK" /&gt;
-        </code>
-    </p>
+        <p>
+            A prototype for a school to implement a web based book store, allowing parents to buy their childrens' books for the year.
+            The books are displayed by class, along with guidance as to what books can be reused, what may be available second hand and
+            allow the buyer to specify whether or not they would like the books covered.
+        </p>
+        <p>
+            The server side is <a href="http://nodejs.org/" target="_blank">Node.js</a> based using
+            <a href="http://expressjs.com/" target="_blank">Express</a> middleware and
+            <a href="http://jade-lang.com/" target="_blank">Jade</a> templates, with an
+            <a href="https://angularjs.org/" target="_blank">Angular.js</a> client front end.
+        </p>
 
+        <ul class="list-unstyled flush">
+            <li><a href="https://github.com/jeffeld/RITS-BookStore" target="_blank">View code on Github</a></li>
+        </ul>
 
-    <ul class="list-unstyled flush">
-        <li>See Fixtures &amp; Scores <a href="http://www.eadestowngaa.ie" target="_blank">in use here</a></li>
-        <li><a href="https://github.com/jeffeld/RITS-Fixtures" target="_blank">View code on Github</a></li>
-    </ul>
-
-    <!-- **************************************************************************************************** -->
-
-    <h2>School Book Store</h2>
-
-    <p>
-        A prototype for a school to implement a web based book store, allowing parents to buy their childrens' books for the year.
-        The books are displayed by class, along with guidance as to what books can be reused, what may be available second hand and
-        allow the buyer to specify whether or not they would like the books covered.
-    </p>
-    <p>
-        The server side is <a href="http://nodejs.org/" target="_blank">Node.js</a> based using
-        <a href="http://expressjs.com/" target="_blank">Express</a> middleware and
-        <a href="http://jade-lang.com/" target="_blank">Jade</a> templates, with an
-        <a href="https://angularjs.org/" target="_blank">Angular.js</a> client front end.
-    </p>
-
-    <ul class="list-unstyled flush">
-        <li><a href="https://github.com/jeffeld/RITS-BookStore" target="_blank">View code on Github</a></li>
-    </ul>
-
-</div>
+    </div>
 </div>

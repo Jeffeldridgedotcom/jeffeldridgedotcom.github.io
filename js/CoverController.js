@@ -5,11 +5,6 @@ var coverControllers = angular.module('CoverControllers', []);
 coverControllers.controller('CoverController', ['$scope', '$timeout',
     function ($scope, $timeout) {
 
-        $scope.Availability = "mid-August 2014";
-
-        $scope.Name = "Jeff Eldridge";
-        $scope.Email = "jeff@rathmoreit.com";
-        $scope.PhoneNumber = "+353 87 916 2652";
 
         var backgroundClasses = ['bg1', 'bg2', 'bg3', 'bg4'],
             bi = _.random(0, (backgroundClasses.length - 1)),
