@@ -266,11 +266,11 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 start : [1999, 9, 1],
                 end : [2010, 10, 22],
                 business : ["Software Localization", "Customer Engagement"],
-                skills : ["C++", "C#", "SQL", "ASP.NET", "Javascript", "Perl"],
+                skills : ["C++", "C#", "SQL", "ASP.NET", "MFC", "ATL", "Javascript", "Perl"],
                 platforms: ["Windows 7", "Windows Vista", "Windows Server 2003", "Windows XP", "Windows 2000"]
             },
             {
-                where : "Natwest Magex UK",
+                where : "NatWest Magex UK",
                 positions : [
                     {
                         title: "Lead Programmer",
@@ -281,8 +281,8 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 end : [1999, 9, 1],
                 desc : [""],
                 platforms: ["Windows NT"],
-                business : ["e-Commerce micro-transactions"],
-                skills : ["C++", "MFC"]
+                business : ["e-Commerce", "Micro-transactions", "DRM"],
+                skills : ["C++", "MFC", "ATL"]
             },
             {
                 where : "Deutsche Bank",
@@ -297,7 +297,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 desc : [""],
                 platforms: ["Windows NT"],
                 business : ["Repurchase Agreements"],
-                skills : ["C++", "MFC"]
+                skills : ["C++", "MFC", "ATL", "Oracle"]
             },
             {
                 where : "Lehman Brothers",
@@ -312,10 +312,10 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 desc : [""],
                 platforms: ["Windows NT", "Solaris Unix"],
                 business : ["Convertible Bonds"],
-                skills : ["C++", "MFC", "SQL", "Visual Basic 6", "ASP"]
+                skills : ["C++", "MFC", "ATL", "SQL", "VB6", "ASP"]
             },
             {
-                where : "Natwest Markets",
+                where : "NatWest Markets",
                 positions : [
                     {
                         title: "Programmer",
@@ -327,7 +327,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 desc : [""],
                 platforms: ["Windows NT", "Solaris Unix"],
                 business : ["Commericial Banking", "Back Office", "Trade Processing"],
-                skills : ["C++", "MFC", "SQL"]
+                skills : ["C++", "MFC", "SQL", "VB6"]
             },
             {
                 where : "Motability Finance Limited",
@@ -342,7 +342,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 desc : [""],
                 platforms: ["Windows NT"],
                 business : ["Automotive Leasing", "Application Security"],
-                skills : ["C++", "MFC", "COM", "OLE", "SQL"]
+                skills : ["C++", "MFC", "COM", "OLE", "SQL", "VB"]
             },
             {
                 where : "Centrefile Limited",
@@ -356,7 +356,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 end : [1994, 12, 1],
                 desc : [""],
                 platforms: ["Windows NT"],
-                business : ["Retail Banking Application Security"],
+                business : ["Retail Banking", "Application Security"],
                 skills : ["C++", "MFC", "SQL"]
             },
             {
