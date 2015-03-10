@@ -104,7 +104,7 @@ cvControllers.controller('ProfileController', ['$scope',
         $scope.Email = "jeff@rathmoreit.com";
         $scope.PhoneNumber = "+353 87 916 2652";
 
-        $scope.ShortMenu = _.union(cvNavigation, codeNav);
+        $scope.ShortMenu = _.union(cvNavigation, codeNav, vdgNav);
 
     }
 ]);
@@ -177,7 +177,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 start : [2014, 7, 1],
                 end : "",
                 business : ["Web Application", "School Library"],
-                skills : ["Javascript", "Node.js", "REST", "Express", "Jade", "Angular.js", "MongoDB", "SEO"],
+                skills : ["JavaScript", "Node.js", "REST", "Express", "Jade", "Angular.js", "MongoDB", "SEO"],
                 platforms: ["Ubuntu 14.04", "Arch Linux"]
             },
             {
@@ -199,7 +199,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 start : [2013, 10, 1],
                 end : [2014, 6, 30],
                 business : ["Video Game Design", "Gameification"],
-                skills : ["C#", "Unity", "Javascript", "Angular.js", "Audio Design", "Narrative Design", "3DS Max", "Photoshop", "Reaper", "FMOD"],
+                skills : ["C#", "Unity", "JavaScript", "Angular.js", "Audio Design", "Narrative Design", "3DS Max", "Photoshop", "Reaper", "FMOD"],
                 platforms: ["Ubuntu 14.04", "Windows 7"]
             },
             {
@@ -221,7 +221,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 start : [2010, 11, 1],
                 end : [2013, 9, 30],
                 business : ["Web Design", "Education Software", "Network Design"],
-                skills : ["Javascript", "DotNetNuke", "Angular.js", "C#", "ASP.NET", "Windows Server Administration", "Network Design"],
+                skills : ["JavaScript", "DotNetNuke", "Angular.js", "C#", "ASP.NET", "Windows Server Administration", "Network Design"],
                 platforms: ["Windows 7", "Windows Server 2008", "Amazon AWS", "Cisco IOS"]
             },
             {
@@ -266,7 +266,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                 start : [1999, 9, 1],
                 end : [2010, 10, 22],
                 business : ["Software Localization", "Customer Engagement"],
-                skills : ["C++", "C#", "SQL", "ASP.NET", "MFC", "ATL", "Javascript", "Perl"],
+                skills : ["C++", "C#", "SQL", "ASP.NET", "MFC", "ATL", "JavaScript", "Perl"],
                 platforms: ["Windows 7", "Windows Vista", "Windows Server 2003", "Windows XP", "Windows 2000"]
             },
             {
