@@ -167,7 +167,7 @@ cvControllers.controller('EmploymentController', ['$scope', '$http',
                         title: "Consultant",
                         type: "p",
                         desc : [
-                            "Developing <a href='http://thepibrary.net' target='_blank'>Pibrary</a>, a Node.js and Angular.js library management system on a Raspberry Pi",
+                            "Developing <a href='https://github.com/jeffeld/pibrary/' target='_blank'>Pibrary</a>, a Node.js and Angular.js library management system on a Raspberry Pi",
                             "Pibrary deployed in <a href='http://www.phcol.ie' target='_blank'>Piper's Hill College</a> November 2014. 1000+ clients accessing using iPads"
                         ],
                         start : [2014, 7, 1],
