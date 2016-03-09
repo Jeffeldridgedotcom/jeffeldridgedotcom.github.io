@@ -101,7 +101,7 @@ cvControllers.controller('ProfileController', ['$scope',
         $scope.Experience = new Date().getUTCFullYear() - 1989;
 
         $scope.Name = "Jeff Eldridge";
-        $scope.Email = "jeff@rathmoreit.com";
+        $scope.Email = "jeff.eldridge.1970@gmail.com";
         $scope.PhoneNumber = "+353 87 916 2652";
 
         $scope.ShortMenu = _.union(cvNavigation, codeNav, vdgNav);
